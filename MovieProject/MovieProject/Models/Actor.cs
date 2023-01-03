@@ -11,7 +11,7 @@ namespace MovieProject.Models
         public int Id { get; set; }
         public string? ActorName { get; set; }
         public string? EngActor { get; set; }
-        public string ProfileImg { get; set; }
+        public string? ProfileImg { get; set; }
         public ICollection<Casting>? Castings { get; set; }
     }
 }
