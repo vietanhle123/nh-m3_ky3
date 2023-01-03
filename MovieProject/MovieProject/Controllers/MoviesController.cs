@@ -22,20 +22,20 @@ namespace MovieProject.Controllers
         // GET: Movies
         public async Task<IActionResult> Index()
         {
-              return _context.Movies != null ? 
-                          View(await _context.Movies.ToListAsync()) :
+              return _context.Movie != null ? 
+                          View(await _context.Movie.ToListAsync()) :
                           Problem("Entity set 'MovieProjectContext.Movie'  is null.");
         }
 
         // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Movies == null)
+            if (id == null || _context.Movie == null)
             {
                 return NotFound();
             }
 
-            var movie = await _context.Movies
+            var movie = await _context.Movie
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (movie == null)
             {
@@ -70,12 +70,12 @@ namespace MovieProject.Controllers
         // GET: Movies/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Movies == null)
+            if (id == null || _context.Movie == null)
             {
                 return NotFound();
             }
 
-            var movie = await _context.Movies.FindAsync(id);
+            var movie = await _context.Movie.FindAsync(id);
             if (movie == null)
             {
                 return NotFound();
@@ -121,12 +121,12 @@ namespace MovieProject.Controllers
         // GET: Movies/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Movies == null)
+            if (id == null || _context.Movie == null)
             {
                 return NotFound();
             }
 
-            var movie = await _context.Movies
+            var movie = await _context.Movie
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (movie == null)
             {
@@ -141,14 +141,14 @@ namespace MovieProject.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Movies == null)
+            if (_context.Movie == null)
             {
                 return Problem("Entity set 'MovieProjectContext.Movie'  is null.");
             }
-            var movie = await _context.Movies.FindAsync(id);
+            var movie = await _context.Movie.FindAsync(id);
             if (movie != null)
             {
-                _context.Movies.Remove(movie);
+                _context.Movie.Remove(movie);
             }
             
             await _context.SaveChangesAsync();
@@ -157,7 +157,7 @@ namespace MovieProject.Controllers
 
         private bool MovieExists(int id)
         {
-          return (_context.Movies?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Movie?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

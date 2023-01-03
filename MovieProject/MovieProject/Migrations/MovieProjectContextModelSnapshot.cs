@@ -38,7 +38,7 @@ namespace MovieProject.Migrations
 
                     b.HasKey("AccountId");
 
-                    b.ToTable("Account", (string)null);
+                    b.ToTable("Account");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Actor", b =>
@@ -56,17 +56,21 @@ namespace MovieProject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProfileImg")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Actor", (string)null);
+                    b.ToTable("Actor");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Casting", b =>
                 {
-                    b.Property<int>("MovieId")
+                    b.Property<int>("CastingId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CastingId"));
 
                     b.Property<int>("ActorId")
                         .HasColumnType("int");
@@ -74,14 +78,16 @@ namespace MovieProject.Migrations
                     b.Property<string>("Cast")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CastingId")
+                    b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.HasKey("MovieId", "ActorId");
+                    b.HasKey("CastingId");
 
                     b.HasIndex("ActorId");
 
-                    b.ToTable("Casting", (string)null);
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("Casting");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Category", b =>
@@ -97,25 +103,30 @@ namespace MovieProject.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category", (string)null);
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Directing", b =>
                 {
-                    b.Property<int>("MovieId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("DirectorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id")
+                    b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.HasKey("MovieId", "DirectorId");
+                    b.HasKey("Id");
 
                     b.HasIndex("DirectorId");
 
-                    b.ToTable("Directing", (string)null);
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("Directing");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Director", b =>
@@ -133,11 +144,12 @@ namespace MovieProject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProfileImg")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Director", (string)null);
+                    b.ToTable("Director");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Movie", b =>
@@ -161,6 +173,7 @@ namespace MovieProject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MainImg")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("OpeningDate")
@@ -180,73 +193,88 @@ namespace MovieProject.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movie", (string)null);
+                    b.ToTable("Movie");
                 });
 
             modelBuilder.Entity("MovieProject.Models.MovieCategory", b =>
                 {
-                    b.Property<int>("MovieId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id")
+                    b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.HasKey("MovieId", "CategoryId");
+                    b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("MovieCategory", (string)null);
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("MovieCategory");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Order", b =>
                 {
-                    b.Property<int>("MovieId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.Property<int>("OrderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
+
+                    b.Property<int>("MovieId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.HasKey("MovieId", "UserId");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrderId");
+
+                    b.HasIndex("MovieId");
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Order", (string)null);
+                    b.ToTable("Order");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Rating", b =>
                 {
-                    b.Property<int>("MovieId")
+                    b.Property<int>("RatingId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("VoteId")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RatingId"));
 
                     b.Property<string>("Comment")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("RatingId")
+                    b.Property<int>("MovieId")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("MovieId", "VoteId");
+                    b.Property<int>("VoteId")
+                        .HasColumnType("int");
+
+                    b.HasKey("RatingId");
+
+                    b.HasIndex("MovieId");
 
                     b.HasIndex("UserId");
 
                     b.HasIndex("VoteId")
                         .IsUnique();
 
-                    b.ToTable("Rating", (string)null);
+                    b.ToTable("Rating");
                 });
 
             modelBuilder.Entity("MovieProject.Models.TrailerContainer", b =>
@@ -259,7 +287,7 @@ namespace MovieProject.Migrations
 
                     b.HasKey("MovieId");
 
-                    b.ToTable("TrailerContainer", (string)null);
+                    b.ToTable("TrailerContainer");
                 });
 
             modelBuilder.Entity("MovieProject.Models.User", b =>
@@ -290,7 +318,7 @@ namespace MovieProject.Migrations
                     b.HasIndex("AccountId")
                         .IsUnique();
 
-                    b.ToTable("User", (string)null);
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Vote", b =>
@@ -306,7 +334,7 @@ namespace MovieProject.Migrations
 
                     b.HasKey("VoteId");
 
-                    b.ToTable("Vote", (string)null);
+                    b.ToTable("Vote");
                 });
 
             modelBuilder.Entity("MovieProject.Models.Casting", b =>

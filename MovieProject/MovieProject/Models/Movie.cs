@@ -14,7 +14,7 @@ namespace MovieProject.Models
         public decimal Price { get; set; }
         public DateTime OpeningDate { get; set; }
         public string? Trailer { get; set; }
-        public string? MainImg { get; set; }
+        public string MainImg { get; set; }
         public string? ThumbnailImg { get; set; }
 
         public ICollection<MovieCategory>? MovieCategories { get; set; }
