@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MovieProject.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class new1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -33,7 +33,7 @@ namespace MovieProject.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ActorName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EngActor = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProfileImg = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ProfileImg = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -61,7 +61,7 @@ namespace MovieProject.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     DirectorName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EngDirector = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProfileImg = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ProfileImg = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -82,7 +82,7 @@ namespace MovieProject.Migrations
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     OpeningDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Trailer = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    MainImg = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MainImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ThumbnailImg = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -130,15 +130,14 @@ namespace MovieProject.Migrations
                 name: "Casting",
                 columns: table => new
                 {
-                    CastingId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     MovieId = table.Column<int>(type: "int", nullable: false),
                     ActorId = table.Column<int>(type: "int", nullable: false),
+                    CastingId = table.Column<int>(type: "int", nullable: false),
                     Cast = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Casting", x => x.CastingId);
+                    table.PrimaryKey("PK_Casting", x => new { x.MovieId, x.ActorId });
                     table.ForeignKey(
                         name: "FK_Casting_Actor_ActorId",
                         column: x => x.ActorId,
@@ -157,14 +156,13 @@ namespace MovieProject.Migrations
                 name: "Directing",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     MovieId = table.Column<int>(type: "int", nullable: false),
-                    DirectorId = table.Column<int>(type: "int", nullable: false)
+                    DirectorId = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Directing", x => x.Id);
+                    table.PrimaryKey("PK_Directing", x => new { x.MovieId, x.DirectorId });
                     table.ForeignKey(
                         name: "FK_Directing_Director_DirectorId",
                         column: x => x.DirectorId,
@@ -183,14 +181,13 @@ namespace MovieProject.Migrations
                 name: "MovieCategory",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     MovieId = table.Column<int>(type: "int", nullable: false),
-                    CategoryId = table.Column<int>(type: "int", nullable: false)
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MovieCategory", x => x.Id);
+                    table.PrimaryKey("PK_MovieCategory", x => new { x.MovieId, x.CategoryId });
                     table.ForeignKey(
                         name: "FK_MovieCategory_Category_CategoryId",
                         column: x => x.CategoryId,
@@ -227,15 +224,14 @@ namespace MovieProject.Migrations
                 name: "Order",
                 columns: table => new
                 {
-                    OrderId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
                     MovieId = table.Column<int>(type: "int", nullable: false),
+                    OrderId = table.Column<int>(type: "int", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Order", x => x.OrderId);
+                    table.PrimaryKey("PK_Order", x => new { x.MovieId, x.UserId });
                     table.ForeignKey(
                         name: "FK_Order_Movie_MovieId",
                         column: x => x.MovieId,
@@ -254,16 +250,15 @@ namespace MovieProject.Migrations
                 name: "Rating",
                 columns: table => new
                 {
-                    RatingId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
                     MovieId = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
                     VoteId = table.Column<int>(type: "int", nullable: false),
+                    RatingId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false),
                     Comment = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Rating", x => x.RatingId);
+                    table.PrimaryKey("PK_Rating", x => new { x.MovieId, x.VoteId });
                     table.ForeignKey(
                         name: "FK_Rating_Movie_MovieId",
                         column: x => x.MovieId,
@@ -290,19 +285,9 @@ namespace MovieProject.Migrations
                 column: "ActorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Casting_MovieId",
-                table: "Casting",
-                column: "MovieId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Directing_DirectorId",
                 table: "Directing",
                 column: "DirectorId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Directing_MovieId",
-                table: "Directing",
-                column: "MovieId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_MovieCategory_CategoryId",
@@ -310,24 +295,9 @@ namespace MovieProject.Migrations
                 column: "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MovieCategory_MovieId",
-                table: "MovieCategory",
-                column: "MovieId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Order_MovieId",
-                table: "Order",
-                column: "MovieId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Order_UserId",
                 table: "Order",
                 column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Rating_MovieId",
-                table: "Rating",
-                column: "MovieId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Rating_UserId",
