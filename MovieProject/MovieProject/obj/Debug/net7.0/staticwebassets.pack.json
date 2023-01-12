@@ -5,6 +5,262 @@
       "PackagePath": "staticwebassets\\MovieProject.bundle.scp.css"
     },
     {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\Content\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\Content\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\default-skin-2.html",
+      "PackagePath": "staticwebassets\\Content\\css\\default-skin-2.html"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\default-skin.css",
+      "PackagePath": "staticwebassets\\Content\\css\\default-skin.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\default-skin.html",
+      "PackagePath": "staticwebassets\\Content\\css\\default-skin.html"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\Content\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\Content\\css\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\mCSB_buttons.html",
+      "PackagePath": "staticwebassets\\Content\\css\\mCSB_buttons.html"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\main.css",
+      "PackagePath": "staticwebassets\\Content\\css\\main.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\Content\\css\\nouislider.min.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\Content\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\owl.video.play.html",
+      "PackagePath": "staticwebassets\\Content\\css\\owl.video.play.html"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\photoswipe.css",
+      "PackagePath": "staticwebassets\\Content\\css\\photoswipe.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\plyr.css",
+      "PackagePath": "staticwebassets\\Content\\css\\plyr.css"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\css\\preloader.html",
+      "PackagePath": "staticwebassets\\Content\\css\\preloader.html"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\fonts\\ioniconse0a5.eot",
+      "PackagePath": "staticwebassets\\Content\\fonts\\ioniconse0a5.eot"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\fonts\\ioniconse0a5.svg",
+      "PackagePath": "staticwebassets\\Content\\fonts\\ioniconse0a5.svg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\fonts\\ioniconse0a5.ttf",
+      "PackagePath": "staticwebassets\\Content\\fonts\\ioniconse0a5.ttf"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\fonts\\ioniconse0a5.woff",
+      "PackagePath": "staticwebassets\\Content\\fonts\\ioniconse0a5.woff"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\fonts\\ioniconse0a5.woff2",
+      "PackagePath": "staticwebassets\\Content\\fonts\\ioniconse0a5.woff2"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\icon\\apple-touch-icon-114x114.png",
+      "PackagePath": "staticwebassets\\Content\\icon\\apple-touch-icon-114x114.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\icon\\apple-touch-icon-144x144.png",
+      "PackagePath": "staticwebassets\\Content\\icon\\apple-touch-icon-144x144.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\icon\\apple-touch-icon-72x72.png",
+      "PackagePath": "staticwebassets\\Content\\icon\\apple-touch-icon-72x72.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\icon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\Content\\icon\\favicon-32x32.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\icon\\logofbi.png",
+      "PackagePath": "staticwebassets\\Content\\icon\\logofbi.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\Download_on_the_App_Store_Badge.svg",
+      "PackagePath": "staticwebassets\\Content\\img\\Download_on_the_App_Store_Badge.svg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\covers\\cover.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\covers\\cover.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\covers\\cover2.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\covers\\cover2.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\covers\\cover3.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\covers\\cover3.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\covers\\cover4.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\covers\\cover4.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\covers\\cover5.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\covers\\cover5.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\covers\\cover6.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\covers\\cover6.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\gallery\\project-1.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\gallery\\project-1.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\gallery\\project-2.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\gallery\\project-2.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\gallery\\project-3.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\gallery\\project-3.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\gallery\\project-4.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\gallery\\project-4.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\gallery\\project-5.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\gallery\\project-5.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\gallery\\project-6.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\gallery\\project-6.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\google-play-badge.png",
+      "PackagePath": "staticwebassets\\Content\\img\\google-play-badge.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\home\\home__bg.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\home\\home__bg.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\home\\home__bg2.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\home\\home__bg2.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\home\\home__bg3.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\home\\home__bg3.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\home\\home__bg4.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\home\\home__bg4.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\Content\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\partners\\3docean-light-background.png",
+      "PackagePath": "staticwebassets\\Content\\img\\partners\\3docean-light-background.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\partners\\activeden-light-background.png",
+      "PackagePath": "staticwebassets\\Content\\img\\partners\\activeden-light-background.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\partners\\audiojungle-light-background.png",
+      "PackagePath": "staticwebassets\\Content\\img\\partners\\audiojungle-light-background.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\partners\\codecanyon-light-background.png",
+      "PackagePath": "staticwebassets\\Content\\img\\partners\\codecanyon-light-background.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\partners\\photodune-light-background.png",
+      "PackagePath": "staticwebassets\\Content\\img\\partners\\photodune-light-background.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\partners\\themeforest-light-background.png",
+      "PackagePath": "staticwebassets\\Content\\img\\partners\\themeforest-light-background.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\section\\section.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\section\\section.jpg"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\img\\user.png",
+      "PackagePath": "staticwebassets\\Content\\img\\user.png"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\jquery.mCustomScrollbar.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.mCustomScrollbar.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\jquery.morelines.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.morelines.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\jquery.mousewheel.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.mousewheel.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\main.js",
+      "PackagePath": "staticwebassets\\Content\\js\\main.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\nouislider.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\photoswipe-ui-default.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\photoswipe-ui-default.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\photoswipe.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\photoswipe.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\plyr.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\plyr.min.js"
+    },
+    {
+      "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\Content\\js\\wNumb.js",
+      "PackagePath": "staticwebassets\\Content\\js\\wNumb.js"
+    },
+    {
       "Id": "D:\\FPT Aptech\\ky 3\\visual\\project1\\nh-m3_ky3\\MovieProject\\MovieProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
